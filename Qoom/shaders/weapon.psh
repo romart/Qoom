@@ -1,0 +1,34 @@
+ps_2_0
+
+dcl t0
+dcl t1
+dcl t2
+dcl t3
+dcl_2d s0
+
+def c16, 2.0f, 0.65f, 0.35f, 15.0f
+def c17, 0.0f, 0.0f, 0.0f, 0.0f
+
+
+;	return ( tex2D(tex0, tc)*(fNdotL+.2) + pow(dot(r, v), 8)*fNdotL );
+
+texld r0, t0, s0			; ( 0, 1 )
+nrm r1, t1					;	float3 n = normalize(normal);
+nrm r2, t2					;	float3 v = normalize(view);
+nrm r3, t3					;	float3 l = normalize(light);
+
+dp3 r4.x, r3, r1			;	r4.x = dp( l, n )
+max r4.x, r4.x, c17.x
+mul r4.x, r4.x, c16.x
+mul r5, r1, r4.xxxx
+sub r4, r3, r5				;	r4 = reflect
+;	float3 r = reflect(l, n);
+
+mul r0, r0, c16.zzzz
+
+dp3 r5.x, r4, r2
+pow r5, r5.x, c16.w
+mul r5, r5, c16.yyyy
+
+add r0, r0, r5
+mov oC0, r0					; ( 1, 0 )

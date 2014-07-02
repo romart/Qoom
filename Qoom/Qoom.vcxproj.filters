@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="math">
+      <UniqueIdentifier>{00551155-bbd4-492e-a2df-879b40c61bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{6870a69a-5d48-4144-8a21-3acd6b418144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sys">
+      <UniqueIdentifier>{db91935a-be3b-477a-ba85-5201abb31142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file">
+      <UniqueIdentifier>{306702c3-ec7a-4d3c-bbf9-177069a05c80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework">
+      <UniqueIdentifier>{1ad80c43-8547-408f-adf5-58691492d1da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{aa7abfc6-0bb1-4761-89a7-b18a18733cc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{4ae33f7c-6c31-43b3-ba0d-8647acc6a2b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sys\sys_main.cpp">
+      <Filter>sys</Filter>
+    </ClCompile>
+    <ClCompile Include="render\r_common.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="file\file.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\log.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Sphere.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Plane.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="render\r_file.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\r_d3dx.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Player.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\level.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Box.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameObject.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Camera.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Angle.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Quat.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\weapon.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="math\math_header.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="sys\sys_window.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="sys\sys_main_header.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="render\r_common.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h" />
+    <ClInclude Include="math\Vector.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="file\file.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\log.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Sphere.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Plane.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="render\r_file.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="render\r_d3dx.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Player.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="render\r_global.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\level.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Box.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameObject.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Camera.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Angle.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Quat.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\weapon.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\weapon.psh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\weapon.vsh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\room.vsh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\room.psh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="pixel.psh">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="vertex.vsh">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
